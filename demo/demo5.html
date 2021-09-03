@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            perspective: 500px;
+        }
+        @keyframes move{
+            0%{width: 0px;}
+            100%{width: 300px;}
+        }
+        /* .p{width: 100px;height: 100px;background-color: crimson;animation: move 5s cubic-bezier(0,1,0.2,1);} */
+        img{width: 100px;height: 100px;transition: all 3s;display: block;}
+        /* img:hover{transform: rotate3d(45deg,45deg,45deg);} */
+        img:hover{transform: rotate3d(1,1,1,360deg);}
+    </style>
+</head>
+<body>
+    <!-- <div class="p"></div> -->
+    <img src="./d.jpg" alt="">
+</body>
+</html>

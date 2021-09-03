@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{width: 100px;height: 100px;position: relative;background-color: burlywood;transition: all 3s;transform-style: preserve-3d;}
+        .box:hover{transform: rotateY(180deg);}
+        .front,.back{position: absolute;top: 0px;left: 0px;width: 100%;height: 100%;border-radius: 50%;text-align: center;font-size: 14px;line-height: 100px;}
+        .front{background-color: brown;z-index: 1;}
+        .back{background-color: aqua;transform: rotateY(180deg);}
+    </style>
+</head>
+<body>
+    
+    <div class="box">
+        <div class="front">AAAAAAAAAA</div>
+        <div class="back">BBBBBBBBBB</div>
+    </div>
+</body>
+</html>
