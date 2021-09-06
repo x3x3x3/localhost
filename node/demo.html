@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script type="module">
+        // import m1 from './t.js';
+
+        // console.log(m1);
+        // var p = new Promise(function(resolve,reject){
+        //     setTimeout(() => {
+        //         console.log('First');
+        //         resolve();
+        //     }, 1000);
+        // }).then(function(){
+        //     return new Promise(function(resolve,reject){
+        //         setTimeout(() => {
+        //             console.log('Second');
+        //             resolve();
+        //         }, 4000);
+        //     }).then(function(){
+        //         setTimeout(() => {
+        //             console.log('Third');
+        //         }, 3000);
+        //     })
+        // })
+        var pro = new Promise(function(resolve,reject){
+            console.log('Run');
+
+            var a = 3;
+            var b = 10;
+            if(b==0) reject('Divide zero');
+            else resolve(a * b);
+        }).then(function(value){
+            console.log(value);
+        }).catch(function(err){
+            console.log(err);
+        }).finally(function(){
+            console.log('end');
+        });
+    </script>
+
+</body>
+</html>
