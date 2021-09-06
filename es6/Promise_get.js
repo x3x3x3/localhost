@@ -10,3 +10,4 @@ function getFile(fpath){
 }
 
 getFile('./a.js').then((r1)=>{console.log(r1)},(err)=>{console.log(err)});
+
