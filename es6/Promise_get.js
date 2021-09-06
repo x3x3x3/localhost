@@ -1,6 +1,5 @@
 import fs from 'fs';
 
-
 function getFile(fpath){
     return new Promise(function(resolve,reject){
         fs.readFile(fpath,'utf8',(err,dataStr)=>{
