@@ -1,4 +1,4 @@
-import fs from 'fs';
+gitimport fs from 'fs';
 
 function getFile(fpath){
     return new Promise(function(resolve,reject){
